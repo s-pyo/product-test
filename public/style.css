@@ -41,19 +41,42 @@ body {
     position: relative;
 }
 
-.theme-toggle {
+.theme-controls {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: none;
-    border: none;
-    font-size: 24px;
+    display: flex;
+    gap: 10px;
+}
+
+.theme-btn {
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    padding: 5px 10px;
+    border-radius: 5px;
     cursor: pointer;
-    padding: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.theme-btn:hover {
+    background-color: var(--text-color);
+    color: var(--container-bg);
+}
+
+.quote-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--text-color);
+    min-height: 1.5em;
 }
 
 h1 {
     margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 .numbers-container {

@@ -8,10 +8,16 @@
 </head>
 <body>
     <div class="container">
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        <div class="theme-controls">
+            <button class="theme-btn" id="light-mode-btn">☀️ Light Mode</button>
+            <button class="theme-btn" id="dark-mode-btn">🌙 Dark Mode</button>
+        </div>
         <h1>Lotto Number Generator</h1>
         <div class="numbers-container">
             <!-- Numbers will be inserted here by JavaScript -->
+        </div>
+        <div id="quote-container" class="quote-container">
+            <!-- Quote will be inserted here -->
         </div>
         <button id="generate-btn">Generate Numbers</button>
     </div>
